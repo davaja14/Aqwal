@@ -94,3 +94,13 @@ footer {
     background-color: #000000;
     border: 1px solid #ccc;
 }
+
+@media only screen and (max-width: 850px) {
+  header {
+    padding: 20px 50px;
+  }  
+
+  .footer {
+    padding: 60px 50px
+  }
+}
