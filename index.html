@@ -935,6 +935,24 @@
         <a href="https://instagram.com/arvin_kenzou">Arvin Kenzou</a>
     </footer>
 
-</body>
+    <script>
+        const searchInput = document.querySelector(".search-bar input");
+        const sections = document.querySelectorAll(".section");
+  
+        searchInput.addEventListener("input", () => {
+          const searchText = searchInput.value.toLowerCase();
+          sections.forEach((section) => {
+            const textContent = section.textContent.toLowerCase();
+  
+            if (textContent.includes(searchText)) {
+              section.style.display = "block";
+            } else {
+              section.style.display = "none";
+            }
+          });
+        });
+      </script>
+
+    </body>
 
 </html>
